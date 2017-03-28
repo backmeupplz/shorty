@@ -6,6 +6,9 @@ Environment:
   * NVM: https://github.com/creationix/nvm
   * MongoDB: https://www.mongodb.com
   * iTerm 2: https://www.iterm2.com
+  * nodemon: https://nodemon.io/
+  * Studio3T (or Mongochef): https://studio3t.com/
+  * Postman: https://www.getpostman.com/
 
 Tech stack:
   * Node.js
