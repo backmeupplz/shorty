@@ -1,8 +1,9 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.btn-primary {
+  margin-top: 30px;
 }
 
-a {
-  color: #00B7FF;
+.block-button {
+  margin: 15px auto;
+  display: block;
+  text-align: center;
 }

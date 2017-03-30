@@ -1,0 +1,9 @@
+{
+  "title": "Shorty",
+  "subtitle": "Yet another emoji URL shortener",
+  "ready": "Your link is Rrrready!",
+  "shorten_another_button": "Shorten another link",
+  "shorten_button": "Shorten",
+  "placeholder": "URL to shorten",
+  "copy": "Copy to clipboard"
+}

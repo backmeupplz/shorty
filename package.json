@@ -10,6 +10,7 @@
     "cookie-parser": "^1.4.3",
     "express": "~4.13.1",
     "hjs": "~0.0.6",
+    "i18n-express": "^1.1.2",
     "mongoose": "^4.9.2",
     "morgan": "~1.6.1",
     "node-emoji": "^1.5.1",

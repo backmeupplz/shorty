@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{ title }}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
-  </body>
+<head>
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+  <link rel="manifest" href="/icon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>🔥🦄 {{texts.title}}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="/javascripts/scripts.js"></script>
+</head>
+<body>
+<div class="container text-center">
+  <div class="page-header">
+    <h1>🔥🦄 {{texts.title}}</h1>
+    <h3>{{texts.subtitle}}</h3>
+  </div>
+  <div id="shorten_output" class="hidden">
+    <h3>{{texts.ready}}</h3>
+    <h2 class="form-control-static" id="result_url">http://localhost:3000/🐯🐒🍟🗳👾</h2>
+    <button type="button" class="btn btn-primary" id="copy_button" class="hidden">{{texts.copy}}</button>
+    <button type="button" class="btn btn-success block-button" id="reset_button">{{texts.shorten_another_button}}</button>
+  </div>
+  <div class="col-sm-2">
+  </div>
+  <div class="col-sm-8">
+    <div class="form-group" id="shorten_input">
+      <label class="control-label hidden" for="long_url" id="long_url_error"></label>
+      <input type="text" class="form-control" id="long_url" placeholder="{{texts.placeholder}}">
+      <button type="submit" class="btn btn-primary" id="shorten_button">{{texts.shorten_button}}</button>
+    </div>
+  </div>
+  <div class="col-sm-2">
+  </div>
+</div>
+<hr />
+<div class="container-fluid">
+  <div class="page-footer">
+    <div class="text-center">
+      <a href="/?clang=en">English</a> <a href="/?clang=ru">Русский</a>
+    </div>
+  </div>
+</div>
+</body>
 </html>

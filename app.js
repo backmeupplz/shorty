@@ -6,6 +6,8 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const fs = require('fs');
 
+const i18n = require("i18n-express");
+
 mongoose.connect('mongodb://localhost:27017/shorty');
 mongoose.Promise = global.Promise;
 fs.readdirSync(path.join(__dirname, '/models')).forEach((filename) => {
@@ -21,11 +23,16 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hjs');
 
-app.use(logger('dev'));
+// app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(i18n({
+  translationsPath: path.join(__dirname, 'i18n'),
+  siteLangs: ['en', 'ru'],
+}));
 
 app.use('/', index);
 app.use('/address/', address);

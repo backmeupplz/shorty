@@ -10,7 +10,10 @@ router.post('/', (req, res, next) => {
   const longUrl = req.body.long_url;
 
   if (!longUrl || !validUrl.isUri(longUrl)) {
-    res.send({ success: false });
+    res.send({ 
+      success: false,
+      error: 'Please provide a valid url',
+    });
     return;
   }
   shorten.shorten(longUrl)

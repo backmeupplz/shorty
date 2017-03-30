@@ -9,6 +9,7 @@ Environment:
   * nodemon: https://nodemon.io/
   * Studio3T (or Mongochef): https://studio3t.com/
   * Postman: https://www.getpostman.com/
+  * LivePage: https://chrome.google.com/webstore/detail/livepage/pilnojpmdoofaelbinaeodfpjheijkbh?hl=en
 
 Tech stack:
   * Node.js
