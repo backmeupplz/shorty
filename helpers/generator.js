@@ -1,7 +1,7 @@
 /** Dependencies */
 const emoji = require('node-emoji');
 
-const baseUrl = 'http://138.197.195.156:3000/';
+const baseUrl = 'https://🔥🦄.ws/';
 
 function r() {
   return emoji.random().emoji;

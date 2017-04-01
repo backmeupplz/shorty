@@ -38,7 +38,7 @@
   </div>
   <div id="shorten_output" class="hidden">
     <h3>{{texts.ready}}</h3>
-    <h2 class="form-control-static" id="result_url">http://138.197.195.156:3000/🐯🐒🍟🗳👾</h2>
+    <h2 class="form-control-static" id="result_url">https://🔥🦄.ws/</h2>
     <button type="button" class="btn btn-primary" id="copy_button" class="hidden">{{texts.copy}}</button>
     <button type="button" class="btn btn-success block-button" id="reset_button">{{texts.shorten_another_button}}</button>
   </div>
