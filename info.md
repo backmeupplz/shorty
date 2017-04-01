@@ -18,5 +18,8 @@ Tech stack:
   * jQuery
   * Bootstrap
 
+Guides:
+  * https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-16-04
+
 GitHub
   * https://github.com/backmeupplz/shorty

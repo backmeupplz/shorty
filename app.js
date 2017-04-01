@@ -1,5 +1,8 @@
 const express = require('express');
 const path = require('path');
+require('dotenv').config({
+  path: path.join(__dirname, '/.env'),
+});
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
@@ -8,7 +11,7 @@ const fs = require('fs');
 
 const i18n = require("i18n-express");
 
-mongoose.connect('mongodb://localhost:27017/shorty');
+mongoose.connect(process.env.DB_URL);
 mongoose.Promise = global.Promise;
 fs.readdirSync(path.join(__dirname, '/models')).forEach((filename) => {
   require(path.join(__dirname, '/models/', filename));
