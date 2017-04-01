@@ -10,7 +10,7 @@ router.get('/', (req, res, next) => {
 /* GET to long url */
 router.get('/:id', (req, res, next) => {
   const id = req.params.id;
-  const fullUrl = `http://localhost:3000/${id}`;
+  const fullUrl = `http://138.197.195.156:3000/${id}`;
   db.findLongAddress(fullUrl)
     .then((long) => {
       if (!long) {
