@@ -34,7 +34,7 @@
 <div class="container text-center">
   <div class="page-header">
     <h1>🔥🦄 {{texts.title}}</h1>
-    <h3>{{texts.subtitle}}</h3>
+    <h3>💪 {{texts.subtitle}} 👏</h3>
   </div>
   <div id="shorten_output" class="hidden">
     <h3>{{texts.ready}}</h3>
