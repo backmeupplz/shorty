@@ -43,7 +43,9 @@ app.use('/address/', address);
 /* Error handlers */
 app.use((req, res, next) => {
   /* 404 will just go to the main page */
-  res.render('index');
+  res.render('index', {
+    ga: process.env.GA,
+  });
 });
 
 app.use((err, req, res, next) => {
