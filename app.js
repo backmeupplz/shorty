@@ -42,9 +42,8 @@ app.use('/address/', address);
 
 /* Error handlers */
 app.use((req, res, next) => {
-  const err = new Error('Not Found');
-  err.status = 404;
-  next(err);
+  /* 404 will just go to the main page */
+  res.render('index');
 });
 
 app.use((err, req, res, next) => {
